@@ -1,4 +1,4 @@
-# ClinHallu: complete training and baseline pipeline
+# ClinShiftHallu: complete training and baseline pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.10--3.13-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
