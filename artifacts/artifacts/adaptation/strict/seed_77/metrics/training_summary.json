@@ -1,0 +1,10 @@
+{
+  "n_train": 8000,
+  "n_validation": 2000,
+  "best_epoch": 5,
+  "best_global_step": 1250,
+  "best_validation_f1_at_tuned_threshold": 0.9413533834586466,
+  "epochs_run": 5,
+  "state_scope": "trainable_only",
+  "context_mode": "normal"
+}

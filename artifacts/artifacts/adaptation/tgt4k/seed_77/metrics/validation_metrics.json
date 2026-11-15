@@ -1,0 +1,27 @@
+{
+  "validation_acc": 0.9483,
+  "validation_precision": 0.9458,
+  "validation_recall": 0.951,
+  "validation_f1": 0.9484,
+  "validation_macro_f1": 0.9482,
+  "validation_mcc": 0.8965,
+  "validation_auc": 0.9873,
+  "validation_auprc": 0.9846,
+  "validation_brier": 0.0422,
+  "validation_confusion_matrix": [
+    [
+      1891,
+      109
+    ],
+    [
+      98,
+      1902
+    ]
+  ],
+  "validation_tn": 1891,
+  "validation_fp": 109,
+  "validation_fn": 98,
+  "validation_tp": 1902,
+  "validation_ece_raw": 0.035637,
+  "validation_ece_calibrated": 0.01748
+}

@@ -1,0 +1,29 @@
+2026-11-09 06:49:23,280 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/c3/train.jsonl
+2026-11-09 06:49:23,503 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/c3/train.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 06:49:25,399 INFO     clinhallu.data.preprocessing - Valid records: 12000 / 12000
+2026-11-09 06:49:25,407 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/val.jsonl
+2026-11-09 06:49:25,446 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/val.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 06:49:26,269 INFO     clinhallu.data.preprocessing - Valid records: 4000 / 4000
+2026-11-09 06:49:26,273 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/eval_data.jsonl
+2026-11-09 06:49:26,296 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/eval_data.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 06:49:26,540 INFO     clinhallu.data.preprocessing - Valid records: 1000 / 1000
+2026-11-09 06:49:32,187 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/c3/train.jsonl
+2026-11-09 06:49:32,413 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/c3/train.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 06:49:34,489 INFO     clinhallu.data.preprocessing - Valid records: 12000 / 12000
+2026-11-09 06:49:34,497 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/val.jsonl
+2026-11-09 06:49:34,544 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/val.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 06:49:35,118 INFO     clinhallu.data.preprocessing - Valid records: 4000 / 4000
+2026-11-09 06:49:35,121 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/eval_data.jsonl
+2026-11-09 06:49:35,132 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/eval_data.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 06:49:35,273 INFO     clinhallu.data.preprocessing - Valid records: 1000 / 1000
+2026-11-09 06:49:35,276 INFO     clinhallu.data.preprocessing - TRAIN  n=12000 | hall: 0(not_hall)=6000(50.0%) 1(hall)=6000(50.0%)
+2026-11-09 06:49:35,276 INFO     clinhallu.data.preprocessing - VAL    n=4000 | hall: 0(not_hall)=2000(50.0%) 1(hall)=2000(50.0%)
+2026-11-09 06:49:35,277 INFO     clinhallu.data.preprocessing - EVAL   n=1000 | hall: 0(not_hall)=500(50.0%) 1(hall)=500(50.0%)
+2026-11-09 06:49:36,727 WARNING  clinhallu.data.preprocessing - Removed 1 lower-priority row(s) to eliminate cross-split question/context leakage (priority: eval > val > train).
+2026-11-09 06:49:36,980 INFO     clinhallu.data.preprocessing - Wrote 11999 records → /content/work/ClinHallu/data/processed/c3/train.jsonl
+2026-11-09 06:49:37,063 INFO     clinhallu.data.preprocessing - Wrote 4000 records → /content/work/ClinHallu/data/processed/c3/validation.jsonl
+2026-11-09 06:49:37,083 INFO     clinhallu.data.preprocessing - Wrote 1000 records → /content/work/ClinHallu/data/processed/c3/test.jsonl
+2026-11-09 06:49:37,083 INFO     clinhallu.data.preprocessing - Wrote 1 records → /content/work/ClinHallu/data/processed/c3/removed_cross_split_overlap.jsonl
+2026-11-09 06:49:37,085 INFO     clinhallu.data.preprocessing - Fixed-split preprocessing complete; no data splitting was performed.
+2026-11-09 06:49:37,189 INFO     clinhallu.experiments.runner - Executing: /usr/bin/python3 -m clinhallu.cli.train --config /content/work/ClinHallu/artifacts/adaptation/c3/seed_13/resolved_config.yaml --resume
+2026-11-09 07:54:39,506 INFO     clinhallu.experiments.runner - Executing: /usr/bin/python3 -m clinhallu.cli.evaluate --config /content/work/ClinHallu/artifacts/adaptation/c3/seed_13/resolved_config.yaml

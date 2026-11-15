@@ -1,0 +1,6 @@
+{
+  "temperature": 1.406805157661438,
+  "threshold": 0.5600000000000002,
+  "validation_f1_at_threshold": 0.9386227544910178,
+  "fitted_on": "validation_only"
+}

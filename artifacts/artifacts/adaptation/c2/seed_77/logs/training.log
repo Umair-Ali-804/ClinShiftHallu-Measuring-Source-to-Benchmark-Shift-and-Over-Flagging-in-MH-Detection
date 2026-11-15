@@ -1,0 +1,52 @@
+2026-11-10 03:01:17,355 INFO     clinhallu.engine.trainer - Run: experiment=c2 seed=77 model=gaer_plus_plus ablation=full device=cuda resume=True
+2026-11-10 03:01:17,666 INFO     httpx - HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/559062ad13d311b87b2c455e67dcd5f1c8f65111/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-11-10 03:01:17,903 INFO     httpx - HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/tree/559062ad13d311b87b2c455e67dcd5f1c8f65111?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-11-10 03:01:18,460 INFO     httpx - HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-11-10 03:01:18,671 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/c2/train.jsonl
+2026-11-10 03:01:18,800 INFO     clinhallu.data.dataset - Loaded 10999 samples from /content/work/ClinHallu/data/processed/c2/train.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-10 03:01:52,195 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/c2/validation.jsonl
+2026-11-10 03:01:52,230 INFO     clinhallu.data.dataset - Loaded 4000 samples from /content/work/ClinHallu/data/processed/c2/validation.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-10 03:01:59,069 INFO     clinhallu.data.dataset - v2 DataLoaders built — train:10999  val:4000
+2026-11-10 03:01:59,349 INFO     httpx - HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/559062ad13d311b87b2c455e67dcd5f1c8f65111/model.safetensors "HTTP/1.1 404 Not Found"
+2026-11-10 03:01:59,349 WARNING  huggingface_hub.utils._http - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-11-10 03:01:59,596 INFO     httpx - HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base "HTTP/1.1 200 OK"
+2026-11-10 03:01:59,847 INFO     httpx - HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/main "HTTP/1.1 200 OK"
+2026-11-10 03:02:00,100 INFO     httpx - HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/discussions?p=0 "HTTP/1.1 200 OK"
+2026-11-10 03:02:00,347 INFO     httpx - HTTP Request: GET https://huggingface.co/api/models/microsoft/deberta-v3-base/commits/refs%2Fpr%2F14 "HTTP/1.1 200 OK"
+2026-11-10 03:02:00,590 INFO     httpx - HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-11-10 03:02:00,827 INFO     httpx - HTTP Request: HEAD https://huggingface.co/microsoft/deberta-v3-base/resolve/refs%2Fpr%2F14/model.safetensors "HTTP/1.1 302 Found"
+2026-11-10 03:03:55,163 INFO     clinhallu.engine.trainer - Run: experiment=c2 seed=77 model=gaer_plus_plus ablation=full device=cuda resume=True
+2026-11-10 03:03:57,524 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/c2/train.jsonl
+2026-11-10 03:03:57,742 INFO     clinhallu.data.dataset - Loaded 10999 samples from /content/work/ClinHallu/data/processed/c2/train.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-10 03:04:29,756 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/c2/validation.jsonl
+2026-11-10 03:04:29,791 INFO     clinhallu.data.dataset - Loaded 4000 samples from /content/work/ClinHallu/data/processed/c2/validation.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-10 03:04:35,634 INFO     clinhallu.data.dataset - v2 DataLoaders built — train:10999  val:4000
+2026-11-10 03:04:43,042 INFO     clinhallu.models.encoder - MedEncoderV2: enabled input gradients for LoRA + gradient checkpointing
+2026-11-10 03:04:43,045 INFO     clinhallu.models.encoder - MedEncoderV2: LoRA applied - trainable 1179648 / 185011200 params (0.638%)
+2026-11-10 03:04:43,045 INFO     clinhallu.models.encoder - MedEncoderV2 loaded: microsoft/deberta-v3-base hidden=768 lora=True
+2026-11-10 03:04:43,547 INFO     clinhallu.engine.trainer - Parameters: total=194,867,202 trainable=11,035,650 (5.663%) LoRA=1,179,648 GAER/head=9,856,002
+2026-11-10 03:04:43,550 INFO     clinhallu.engine.checkpoints - No checkpoint at /content/work/ClinHallu/artifacts/adaptation/c2/seed_77/checkpoints/latest_checkpoint.pt — starting from scratch.
+2026-11-10 03:10:24,562 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 1 at batch 800/1375 (step 200).
+2026-11-10 03:15:37,734 INFO     clinhallu.engine.trainer - Epoch 1 train_loss=0.4244 validation_loss=0.4604 validation_f1@0.5=0.7931 validation_f1@tau*=0.8059 tau*=0.420
+2026-11-10 03:26:47,151 INFO     clinhallu.engine.trainer - Run: experiment=c2 seed=77 model=gaer_plus_plus ablation=full device=cuda resume=True
+2026-11-10 03:26:49,328 INFO     clinhallu.data.cache - Using tokenization cache: /content/work/ClinHallu/data/cache/439a21fed7729a97c126/train_features.pt
+2026-11-10 03:26:49,460 INFO     clinhallu.data.cache - Using tokenization cache: /content/work/ClinHallu/data/cache/439a21fed7729a97c126/validation_features.pt
+2026-11-10 03:26:49,461 INFO     clinhallu.data.dataset - v2 DataLoaders built — train:10999  val:4000
+2026-11-10 03:26:55,110 INFO     clinhallu.models.encoder - MedEncoderV2: enabled input gradients for LoRA + gradient checkpointing
+2026-11-10 03:26:55,113 INFO     clinhallu.models.encoder - MedEncoderV2: LoRA applied - trainable 1179648 / 185011200 params (0.638%)
+2026-11-10 03:26:55,113 INFO     clinhallu.models.encoder - MedEncoderV2 loaded: microsoft/deberta-v3-base hidden=768 lora=True
+2026-11-10 03:26:55,608 INFO     clinhallu.engine.trainer - Parameters: total=194,867,202 trainable=11,035,650 (5.663%) LoRA=1,179,648 GAER/head=9,856,002
+2026-11-10 03:26:55,804 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/c2/seed_77/checkpoints/latest_checkpoint.pt (epoch=1)
+2026-11-10 03:26:55,824 INFO     clinhallu.engine.checkpoints - Resuming inside epoch 1 after 800 batches (6400 examples, step=200, best=-1.0000)
+2026-11-10 03:32:11,702 INFO     clinhallu.engine.trainer - Epoch 1 train_loss=0.4244 validation_loss=0.4592 validation_f1@0.5=0.7943 validation_f1@tau*=0.8053 tau*=0.370
+2026-11-10 03:37:48,239 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 2 at batch 800/1375 (step 543).
+2026-11-10 03:43:02,170 INFO     clinhallu.engine.trainer - Epoch 2 train_loss=0.2138 validation_loss=0.3047 validation_f1@0.5=0.8670 validation_f1@tau*=0.8825 tau*=0.340
+2026-11-10 03:48:40,363 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 3 at batch 800/1375 (step 886).
+2026-11-10 03:53:54,534 INFO     clinhallu.engine.trainer - Epoch 3 train_loss=0.1630 validation_loss=0.2991 validation_f1@0.5=0.8911 validation_f1@tau*=0.9056 tau*=0.710
+2026-11-10 03:59:30,602 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 4 at batch 800/1375 (step 1229).
+2026-11-10 04:04:44,386 INFO     clinhallu.engine.trainer - Epoch 4 train_loss=0.1361 validation_loss=0.2594 validation_f1@0.5=0.9076 validation_f1@tau*=0.9113 tau*=0.580
+2026-11-10 04:10:21,783 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 5 at batch 800/1375 (step 1572).
+2026-11-10 04:15:35,235 INFO     clinhallu.engine.trainer - Epoch 5 train_loss=0.1206 validation_loss=0.2385 validation_f1@0.5=0.9116 validation_f1@tau*=0.9135 tau*=0.430
+2026-11-10 04:15:37,005 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/c2/seed_77/checkpoints/best_model.pt (epoch=5)
+2026-11-10 04:16:51,050 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/c2/seed_77/checkpoints/best_model.pt (epoch=5)
+2026-11-10 04:16:51,141 INFO     clinhallu.engine.checkpoints - Model-only safetensors exported to /content/work/ClinHallu/artifacts/adaptation/c2/seed_77/checkpoints/model_only.safetensors

@@ -1,0 +1,27 @@
+2026-11-09 14:09:18,932 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/strict/train.jsonl
+2026-11-09 14:09:19,074 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/strict/train.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 14:09:20,147 INFO     clinhallu.data.preprocessing - Valid records: 8000 / 8000
+2026-11-09 14:09:20,152 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/strict/val.jsonl
+2026-11-09 14:09:20,181 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/strict/val.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 14:09:20,448 INFO     clinhallu.data.preprocessing - Valid records: 2000 / 2000
+2026-11-09 14:09:20,449 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/eval_data.jsonl
+2026-11-09 14:09:20,459 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/eval_data.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 14:09:20,590 INFO     clinhallu.data.preprocessing - Valid records: 1000 / 1000
+2026-11-09 14:09:22,700 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/strict/train.jsonl
+2026-11-09 14:09:22,798 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/strict/train.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 14:09:23,903 INFO     clinhallu.data.preprocessing - Valid records: 8000 / 8000
+2026-11-09 14:09:23,908 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/strict/val.jsonl
+2026-11-09 14:09:23,932 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/strict/val.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 14:09:24,199 INFO     clinhallu.data.preprocessing - Valid records: 2000 / 2000
+2026-11-09 14:09:24,200 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/eval_data.jsonl
+2026-11-09 14:09:24,211 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/eval_data.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-09 14:09:24,344 INFO     clinhallu.data.preprocessing - Valid records: 1000 / 1000
+2026-11-09 14:09:24,346 INFO     clinhallu.data.preprocessing - TRAIN  n=8000 | hall: 0(not_hall)=4000(50.0%) 1(hall)=4000(50.0%)
+2026-11-09 14:09:24,346 INFO     clinhallu.data.preprocessing - VAL    n=2000 | hall: 0(not_hall)=1000(50.0%) 1(hall)=1000(50.0%)
+2026-11-09 14:09:24,346 INFO     clinhallu.data.preprocessing - EVAL   n=1000 | hall: 0(not_hall)=500(50.0%) 1(hall)=500(50.0%)
+2026-11-09 14:09:24,804 INFO     clinhallu.data.preprocessing - Wrote 8000 records → /content/work/ClinHallu/data/processed/strict/train.jsonl
+2026-11-09 14:09:24,843 INFO     clinhallu.data.preprocessing - Wrote 2000 records → /content/work/ClinHallu/data/processed/strict/validation.jsonl
+2026-11-09 14:09:24,862 INFO     clinhallu.data.preprocessing - Wrote 1000 records → /content/work/ClinHallu/data/processed/strict/test.jsonl
+2026-11-09 14:09:24,863 INFO     clinhallu.data.preprocessing - Fixed-split preprocessing complete; no data splitting was performed.
+2026-11-09 14:09:24,941 INFO     clinhallu.experiments.runner - Executing: /usr/bin/python3 -m clinhallu.cli.train --config /content/work/ClinHallu/artifacts/adaptation/strict/seed_42/resolved_config.yaml --resume
+2026-11-09 14:48:35,569 INFO     clinhallu.experiments.runner - Executing: /usr/bin/python3 -m clinhallu.cli.evaluate --config /content/work/ClinHallu/artifacts/adaptation/strict/seed_42/resolved_config.yaml

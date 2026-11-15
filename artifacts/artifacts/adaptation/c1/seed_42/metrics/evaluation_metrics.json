@@ -1,0 +1,33 @@
+{
+  "eval_acc": 0.728,
+  "eval_precision": 0.6972,
+  "eval_recall": 0.806,
+  "eval_f1": 0.7477,
+  "eval_macro_f1": 0.7263,
+  "eval_mcc": 0.4617,
+  "eval_auc": 0.8175,
+  "eval_auprc": 0.8229,
+  "eval_brier": 0.1955,
+  "eval_confusion_matrix": [
+    [
+      325,
+      175
+    ],
+    [
+      97,
+      403
+    ]
+  ],
+  "eval_tn": 325,
+  "eval_fp": 175,
+  "eval_fn": 97,
+  "eval_tp": 403,
+  "eval_ece_raw": 0.209485,
+  "eval_ece_calibrated": 0.129381,
+  "eval_ece_delta": 0.080104,
+  "eval_f1_ci_low": 0.7173,
+  "eval_f1_ci_high": 0.7777,
+  "temperature": 2.2745769023895264,
+  "threshold": 0.21000000000000002,
+  "protocol": "frozen_test_after_validation_calibration"
+}

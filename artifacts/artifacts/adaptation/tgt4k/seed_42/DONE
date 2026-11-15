@@ -1,0 +1,1 @@
+{"reconstructed_from_upload": true, "run_id": "tgt4k_seed42", "condition": "tgt4k", "seed": 42, "kind": "train", "log_finished": "2026-11-09 14:09:14", "source": "results.zip!results/tgt4k 42.zip", "note": "Weights are not part of this tree."}

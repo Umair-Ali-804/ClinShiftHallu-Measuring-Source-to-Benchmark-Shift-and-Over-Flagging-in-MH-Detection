@@ -1,0 +1,29 @@
+2026-11-09 09:10:57,924 INFO     clinhallu.engine.trainer - Run: experiment=c5 seed=13 model=gaer_plus_plus ablation=full device=cuda resume=True
+2026-11-09 09:10:59,948 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/c5/train.jsonl
+2026-11-09 09:11:00,215 INFO     clinhallu.data.dataset - Loaded 13999 samples from /content/work/ClinHallu/data/processed/c5/train.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-09 09:11:36,964 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/c5/validation.jsonl
+2026-11-09 09:11:36,998 INFO     clinhallu.data.dataset - Loaded 4000 samples from /content/work/ClinHallu/data/processed/c5/validation.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-09 09:11:44,536 INFO     clinhallu.data.dataset - v2 DataLoaders built — train:13999  val:4000
+2026-11-09 09:11:50,398 INFO     clinhallu.models.encoder - MedEncoderV2: enabled input gradients for LoRA + gradient checkpointing
+2026-11-09 09:11:50,401 INFO     clinhallu.models.encoder - MedEncoderV2: LoRA applied - trainable 1179648 / 185011200 params (0.638%)
+2026-11-09 09:11:50,401 INFO     clinhallu.models.encoder - MedEncoderV2 loaded: microsoft/deberta-v3-base hidden=768 lora=True
+2026-11-09 09:11:50,880 INFO     clinhallu.engine.trainer - Parameters: total=194,867,202 trainable=11,035,650 (5.663%) LoRA=1,179,648 GAER/head=9,856,002
+2026-11-09 09:11:50,884 INFO     clinhallu.engine.checkpoints - No checkpoint at /content/work/ClinHallu/artifacts/adaptation/c5/seed_13/checkpoints/latest_checkpoint.pt — starting from scratch.
+2026-11-09 09:17:45,576 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 1 at batch 800/1750 (step 200).
+2026-11-09 09:23:45,410 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 1 at batch 1600/1750 (step 400).
+2026-11-09 09:26:08,097 INFO     clinhallu.engine.trainer - Epoch 1 train_loss=0.4299 validation_loss=0.4669 validation_f1@0.5=0.8296 validation_f1@tau*=0.8921 tau*=0.840
+2026-11-09 09:32:08,576 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 2 at batch 800/1750 (step 637).
+2026-11-09 09:38:08,325 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 2 at batch 1600/1750 (step 837).
+2026-11-09 09:40:31,223 INFO     clinhallu.engine.trainer - Epoch 2 train_loss=0.2107 validation_loss=0.2056 validation_f1@0.5=0.9198 validation_f1@tau*=0.9329 tau*=0.140
+2026-11-09 09:46:31,636 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 3 at batch 800/1750 (step 1074).
+2026-11-09 09:52:31,354 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 3 at batch 1600/1750 (step 1274).
+2026-11-09 09:54:53,855 INFO     clinhallu.engine.trainer - Epoch 3 train_loss=0.1557 validation_loss=0.1901 validation_f1@0.5=0.9408 validation_f1@tau*=0.9435 tau*=0.660
+2026-11-09 10:00:54,735 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 4 at batch 800/1750 (step 1511).
+2026-11-09 10:06:53,093 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 4 at batch 1600/1750 (step 1711).
+2026-11-09 10:09:15,757 INFO     clinhallu.engine.trainer - Epoch 4 train_loss=0.1241 validation_loss=0.1961 validation_f1@0.5=0.9377 validation_f1@tau*=0.9462 tau*=0.810
+2026-11-09 10:15:19,302 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 5 at batch 800/1750 (step 1948).
+2026-11-09 10:21:14,012 INFO     clinhallu.engine.trainer - Checkpoint written mid-epoch 5 at batch 1600/1750 (step 2148).
+2026-11-09 10:23:38,630 INFO     clinhallu.engine.trainer - Epoch 5 train_loss=0.1086 validation_loss=0.1704 validation_f1@0.5=0.9482 validation_f1@tau*=0.9501 tau*=0.350
+2026-11-09 10:23:40,233 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/c5/seed_13/checkpoints/best_model.pt (epoch=5)
+2026-11-09 10:24:56,138 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/c5/seed_13/checkpoints/best_model.pt (epoch=5)
+2026-11-09 10:24:56,211 INFO     clinhallu.engine.checkpoints - Model-only safetensors exported to /content/work/ClinHallu/artifacts/adaptation/c5/seed_13/checkpoints/model_only.safetensors

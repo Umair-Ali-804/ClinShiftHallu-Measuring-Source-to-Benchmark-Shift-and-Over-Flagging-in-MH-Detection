@@ -1,0 +1,30 @@
+{
+  "eval_acc": 0.723,
+  "eval_precision": 0.6932,
+  "eval_recall": 0.8,
+  "eval_f1": 0.7428,
+  "eval_macro_f1": 0.7213,
+  "eval_mcc": 0.4514,
+  "eval_auc": 0.7934,
+  "eval_auprc": 0.7895,
+  "eval_brier": 0.1988,
+  "eval_confusion_matrix": [
+    [
+      323,
+      177
+    ],
+    [
+      100,
+      400
+    ]
+  ],
+  "eval_tn": 323,
+  "eval_fp": 177,
+  "eval_fn": 100,
+  "eval_tp": 400,
+  "eval_ece_calibrated": 0.11752,
+  "threshold": 0.4380470580679865,
+  "baseline": "length_only",
+  "train_rows": 13999,
+  "protocol": "answer_text_only"
+}

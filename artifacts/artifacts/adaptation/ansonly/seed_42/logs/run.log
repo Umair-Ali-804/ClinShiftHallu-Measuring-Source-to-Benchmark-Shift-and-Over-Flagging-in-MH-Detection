@@ -1,0 +1,12 @@
+2026-11-10 06:25:29,592 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/train.jsonl
+2026-11-10 06:25:29,806 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/train.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-10 06:25:31,788 INFO     clinhallu.data.preprocessing - Valid records: 14000 / 14000
+2026-11-10 06:25:31,800 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/val.jsonl
+2026-11-10 06:25:31,837 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/val.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-10 06:25:32,383 INFO     clinhallu.data.preprocessing - Valid records: 4000 / 4000
+2026-11-10 06:25:32,386 INFO     clinhallu.data.preprocessing - Reading JSONL: /content/work/ClinHallu/data/raw/eval_data.jsonl
+2026-11-10 06:25:32,397 INFO     clinhallu.data.preprocessing - No 'reason' field in /content/work/ClinHallu/data/raw/eval_data.jsonl — the JSONL 'reason' field will be written as an empty string for every record.
+2026-11-10 06:25:32,535 INFO     clinhallu.data.preprocessing - Valid records: 1000 / 1000
+2026-11-10 06:25:35,120 INFO     clinhallu.experiments.runner - Reusing verified processed data at /content/work/ClinHallu/data/processed/ansonly
+2026-11-10 06:25:35,130 INFO     clinhallu.experiments.runner - Executing: /usr/bin/python3 -m clinhallu.cli.train --config /content/work/ClinHallu/artifacts/adaptation/ansonly/seed_42/resolved_config.yaml --resume
+2026-11-10 06:57:25,317 INFO     clinhallu.experiments.runner - Executing: /usr/bin/python3 -m clinhallu.cli.evaluate --config /content/work/ClinHallu/artifacts/adaptation/ansonly/seed_42/resolved_config.yaml

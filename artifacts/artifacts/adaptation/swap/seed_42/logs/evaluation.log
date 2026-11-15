@@ -1,0 +1,7 @@
+2026-11-10 06:17:26,384 INFO     clinhallu.models.encoder - MedEncoderV2: enabled input gradients for LoRA + gradient checkpointing
+2026-11-10 06:17:26,387 INFO     clinhallu.models.encoder - MedEncoderV2: LoRA applied - trainable 1179648 / 185011200 params (0.638%)
+2026-11-10 06:17:26,387 INFO     clinhallu.models.encoder - MedEncoderV2 loaded: microsoft/deberta-v3-base hidden=768 lora=True
+2026-11-10 06:17:27,038 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/swap/seed_42/checkpoints/best_model.pt (epoch=5)
+2026-11-10 06:17:28,480 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/swap/test.jsonl
+2026-11-10 06:17:28,489 INFO     clinhallu.data.dataset - Loaded 1000 samples from /content/work/ClinHallu/data/processed/swap/test.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-10 06:18:18,708 INFO     clinhallu.engine.inference - Frozen evaluation saved to /content/work/ClinHallu/artifacts/adaptation/swap/seed_42/metrics/evaluation_metrics.json

@@ -1,0 +1,19 @@
+2026-11-09 13:37:55,411 INFO     clinhallu.engine.trainer - Run: experiment=tgt4k seed=42 model=gaer_plus_plus ablation=full device=cuda resume=True
+2026-11-09 13:37:58,533 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/tgt4k/train.jsonl
+2026-11-09 13:37:58,600 INFO     clinhallu.data.dataset - Loaded 3999 samples from /content/work/ClinHallu/data/processed/tgt4k/train.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-09 13:38:04,239 INFO     clinhallu.data.cache - Building tokenization cache for /content/work/ClinHallu/data/processed/tgt4k/validation.jsonl
+2026-11-09 13:38:04,275 INFO     clinhallu.data.dataset - Loaded 4000 samples from /content/work/ClinHallu/data/processed/tgt4k/validation.jsonl (require_labels=True, question_budget=96, answer_budget=128, max_length=512)
+2026-11-09 13:38:09,400 INFO     clinhallu.data.dataset - v2 DataLoaders built — train:3999  val:4000
+2026-11-09 13:38:25,828 INFO     clinhallu.models.encoder - MedEncoderV2: enabled input gradients for LoRA + gradient checkpointing
+2026-11-09 13:38:25,833 INFO     clinhallu.models.encoder - MedEncoderV2: LoRA applied - trainable 1179648 / 185011200 params (0.638%)
+2026-11-09 13:38:25,833 INFO     clinhallu.models.encoder - MedEncoderV2 loaded: microsoft/deberta-v3-base hidden=768 lora=True
+2026-11-09 13:38:27,455 INFO     clinhallu.engine.trainer - Parameters: total=194,867,202 trainable=11,035,650 (5.663%) LoRA=1,179,648 GAER/head=9,856,002
+2026-11-09 13:38:27,469 INFO     clinhallu.engine.checkpoints - No checkpoint at /content/work/ClinHallu/artifacts/adaptation/tgt4k/seed_42/checkpoints/latest_checkpoint.pt — starting from scratch.
+2026-11-09 13:44:10,237 INFO     clinhallu.engine.trainer - Epoch 1 train_loss=0.5751 validation_loss=0.5172 validation_f1@0.5=0.8161 validation_f1@tau*=0.8797 tau*=0.910
+2026-11-09 13:49:49,112 INFO     clinhallu.engine.trainer - Epoch 2 train_loss=0.2801 validation_loss=0.1797 validation_f1@0.5=0.9325 validation_f1@tau*=0.9394 tau*=0.290
+2026-11-09 13:55:26,572 INFO     clinhallu.engine.trainer - Epoch 3 train_loss=0.1774 validation_loss=0.1773 validation_f1@0.5=0.9458 validation_f1@tau*=0.9465 tau*=0.520
+2026-11-09 14:01:05,569 INFO     clinhallu.engine.trainer - Epoch 4 train_loss=0.1314 validation_loss=0.1751 validation_f1@0.5=0.9455 validation_f1@tau*=0.9511 tau*=0.770
+2026-11-09 14:06:43,017 INFO     clinhallu.engine.trainer - Epoch 5 train_loss=0.1036 validation_loss=0.1616 validation_f1@0.5=0.9516 validation_f1@tau*=0.9527 tau*=0.420
+2026-11-09 14:06:44,496 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/tgt4k/seed_42/checkpoints/best_model.pt (epoch=5)
+2026-11-09 14:08:03,662 INFO     clinhallu.engine.checkpoints - Loaded checkpoint from /content/work/ClinHallu/artifacts/adaptation/tgt4k/seed_42/checkpoints/best_model.pt (epoch=5)
+2026-11-09 14:08:03,733 INFO     clinhallu.engine.checkpoints - Model-only safetensors exported to /content/work/ClinHallu/artifacts/adaptation/tgt4k/seed_42/checkpoints/model_only.safetensors
