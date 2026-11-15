@@ -1,0 +1,9 @@
+# 6,000 source + 4,000 target rows: same total size as C1, composition of C5
+extends: ../base.yaml
+experiment:
+  name: swap
+data:
+  train_path: data/raw/swap/train.jsonl
+  processed_dir: data/processed/swap
+  expected_rows:
+    train: 10000

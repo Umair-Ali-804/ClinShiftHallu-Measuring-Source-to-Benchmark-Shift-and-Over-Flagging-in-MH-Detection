@@ -1,0 +1,737 @@
+[
+  {
+    "run_id": "c1_seed13",
+    "kind": "train",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 13,
+    "est_minutes": 26,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "c2_seed13",
+    "kind": "train",
+    "condition": "c2",
+    "config": "configs/conditions/c2.yaml",
+    "seed": 13,
+    "est_minutes": 29,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "c3_seed13",
+    "kind": "train",
+    "condition": "c3",
+    "config": "configs/conditions/c3.yaml",
+    "seed": 13,
+    "est_minutes": 31,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "c4_seed13",
+    "kind": "train",
+    "condition": "c4",
+    "config": "configs/conditions/c4.yaml",
+    "seed": 13,
+    "est_minutes": 34,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "c5_seed13",
+    "kind": "train",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 13,
+    "est_minutes": 36,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "swap_seed13",
+    "kind": "train",
+    "condition": "swap",
+    "config": "configs/conditions/swap.yaml",
+    "seed": 13,
+    "est_minutes": 26,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "tgt4k_seed13",
+    "kind": "train",
+    "condition": "tgt4k",
+    "config": "configs/conditions/tgt4k.yaml",
+    "seed": 13,
+    "est_minutes": 10,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "strict_seed13",
+    "kind": "train",
+    "condition": "strict",
+    "config": "configs/conditions/strict.yaml",
+    "seed": 13,
+    "est_minutes": 21,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "s2k_seed13",
+    "kind": "train",
+    "condition": "s2k",
+    "config": "configs/conditions/s2k.yaml",
+    "seed": 13,
+    "est_minutes": 8,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "s5k_seed13",
+    "kind": "train",
+    "condition": "s5k",
+    "config": "configs/conditions/s5k.yaml",
+    "seed": 13,
+    "est_minutes": 13,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "ansonly_seed13",
+    "kind": "train",
+    "condition": "ansonly",
+    "config": "configs/conditions/ansonly.yaml",
+    "seed": 13,
+    "est_minutes": 36,
+    "priority": 1,
+    "requires": []
+  },
+  {
+    "run_id": "c1_seed42",
+    "kind": "train",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 42,
+    "est_minutes": 26,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "c2_seed42",
+    "kind": "train",
+    "condition": "c2",
+    "config": "configs/conditions/c2.yaml",
+    "seed": 42,
+    "est_minutes": 29,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "c3_seed42",
+    "kind": "train",
+    "condition": "c3",
+    "config": "configs/conditions/c3.yaml",
+    "seed": 42,
+    "est_minutes": 31,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "c4_seed42",
+    "kind": "train",
+    "condition": "c4",
+    "config": "configs/conditions/c4.yaml",
+    "seed": 42,
+    "est_minutes": 34,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "c5_seed42",
+    "kind": "train",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 42,
+    "est_minutes": 36,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "swap_seed42",
+    "kind": "train",
+    "condition": "swap",
+    "config": "configs/conditions/swap.yaml",
+    "seed": 42,
+    "est_minutes": 26,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "tgt4k_seed42",
+    "kind": "train",
+    "condition": "tgt4k",
+    "config": "configs/conditions/tgt4k.yaml",
+    "seed": 42,
+    "est_minutes": 10,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "strict_seed42",
+    "kind": "train",
+    "condition": "strict",
+    "config": "configs/conditions/strict.yaml",
+    "seed": 42,
+    "est_minutes": 21,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "s2k_seed42",
+    "kind": "train",
+    "condition": "s2k",
+    "config": "configs/conditions/s2k.yaml",
+    "seed": 42,
+    "est_minutes": 8,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "s5k_seed42",
+    "kind": "train",
+    "condition": "s5k",
+    "config": "configs/conditions/s5k.yaml",
+    "seed": 42,
+    "est_minutes": 13,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "ansonly_seed42",
+    "kind": "train",
+    "condition": "ansonly",
+    "config": "configs/conditions/ansonly.yaml",
+    "seed": 42,
+    "est_minutes": 36,
+    "priority": 2,
+    "requires": []
+  },
+  {
+    "run_id": "c1_seed77",
+    "kind": "train",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 77,
+    "est_minutes": 26,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "c2_seed77",
+    "kind": "train",
+    "condition": "c2",
+    "config": "configs/conditions/c2.yaml",
+    "seed": 77,
+    "est_minutes": 29,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "c3_seed77",
+    "kind": "train",
+    "condition": "c3",
+    "config": "configs/conditions/c3.yaml",
+    "seed": 77,
+    "est_minutes": 31,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "c4_seed77",
+    "kind": "train",
+    "condition": "c4",
+    "config": "configs/conditions/c4.yaml",
+    "seed": 77,
+    "est_minutes": 34,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "c5_seed77",
+    "kind": "train",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 77,
+    "est_minutes": 36,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "swap_seed77",
+    "kind": "train",
+    "condition": "swap",
+    "config": "configs/conditions/swap.yaml",
+    "seed": 77,
+    "est_minutes": 26,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "tgt4k_seed77",
+    "kind": "train",
+    "condition": "tgt4k",
+    "config": "configs/conditions/tgt4k.yaml",
+    "seed": 77,
+    "est_minutes": 10,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "strict_seed77",
+    "kind": "train",
+    "condition": "strict",
+    "config": "configs/conditions/strict.yaml",
+    "seed": 77,
+    "est_minutes": 21,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "s2k_seed77",
+    "kind": "train",
+    "condition": "s2k",
+    "config": "configs/conditions/s2k.yaml",
+    "seed": 77,
+    "est_minutes": 8,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "s5k_seed77",
+    "kind": "train",
+    "condition": "s5k",
+    "config": "configs/conditions/s5k.yaml",
+    "seed": 77,
+    "est_minutes": 13,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "ansonly_seed77",
+    "kind": "train",
+    "condition": "ansonly",
+    "config": "configs/conditions/ansonly.yaml",
+    "seed": 77,
+    "est_minutes": 36,
+    "priority": 3,
+    "requires": []
+  },
+  {
+    "run_id": "eval_c1_seed13_blank",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 13,
+    "tag": "blank",
+    "context_mode": "blank",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c1_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed13_shuffled",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 13,
+    "tag": "shuffled",
+    "context_mode": "shuffled",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c1_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed13_external",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 13,
+    "tag": "external",
+    "context_mode": null,
+    "dataset": "data/external/halubench_pubmedqa.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c1_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed13_unseen",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 13,
+    "tag": "unseen",
+    "context_mode": null,
+    "dataset": "data/external/unseen_generator.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c1_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed13_blank",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 13,
+    "tag": "blank",
+    "context_mode": "blank",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c5_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed13_shuffled",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 13,
+    "tag": "shuffled",
+    "context_mode": "shuffled",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c5_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed13_external",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 13,
+    "tag": "external",
+    "context_mode": null,
+    "dataset": "data/external/halubench_pubmedqa.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c5_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed13_unseen",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 13,
+    "tag": "unseen",
+    "context_mode": null,
+    "dataset": "data/external/unseen_generator.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "c5_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_strict_seed13_targetval",
+    "kind": "eval",
+    "condition": "strict",
+    "config": "configs/conditions/strict.yaml",
+    "seed": 13,
+    "tag": "targetval",
+    "context_mode": null,
+    "dataset": "data/raw/val.jsonl",
+    "est_minutes": 6,
+    "priority": 1.5,
+    "requires": [
+      "strict_seed13"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed42_blank",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 42,
+    "tag": "blank",
+    "context_mode": "blank",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c1_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed42_shuffled",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 42,
+    "tag": "shuffled",
+    "context_mode": "shuffled",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c1_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed42_external",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 42,
+    "tag": "external",
+    "context_mode": null,
+    "dataset": "data/external/halubench_pubmedqa.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c1_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed42_unseen",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 42,
+    "tag": "unseen",
+    "context_mode": null,
+    "dataset": "data/external/unseen_generator.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c1_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed42_blank",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 42,
+    "tag": "blank",
+    "context_mode": "blank",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c5_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed42_shuffled",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 42,
+    "tag": "shuffled",
+    "context_mode": "shuffled",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c5_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed42_external",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 42,
+    "tag": "external",
+    "context_mode": null,
+    "dataset": "data/external/halubench_pubmedqa.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c5_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed42_unseen",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 42,
+    "tag": "unseen",
+    "context_mode": null,
+    "dataset": "data/external/unseen_generator.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "c5_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_strict_seed42_targetval",
+    "kind": "eval",
+    "condition": "strict",
+    "config": "configs/conditions/strict.yaml",
+    "seed": 42,
+    "tag": "targetval",
+    "context_mode": null,
+    "dataset": "data/raw/val.jsonl",
+    "est_minutes": 6,
+    "priority": 2.5,
+    "requires": [
+      "strict_seed42"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed77_blank",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 77,
+    "tag": "blank",
+    "context_mode": "blank",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c1_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed77_shuffled",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 77,
+    "tag": "shuffled",
+    "context_mode": "shuffled",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c1_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed77_external",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 77,
+    "tag": "external",
+    "context_mode": null,
+    "dataset": "data/external/halubench_pubmedqa.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c1_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_c1_seed77_unseen",
+    "kind": "eval",
+    "condition": "c1",
+    "config": "configs/conditions/c1.yaml",
+    "seed": 77,
+    "tag": "unseen",
+    "context_mode": null,
+    "dataset": "data/external/unseen_generator.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c1_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed77_blank",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 77,
+    "tag": "blank",
+    "context_mode": "blank",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c5_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed77_shuffled",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 77,
+    "tag": "shuffled",
+    "context_mode": "shuffled",
+    "dataset": "data/raw/eval_data.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c5_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed77_external",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 77,
+    "tag": "external",
+    "context_mode": null,
+    "dataset": "data/external/halubench_pubmedqa.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c5_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_c5_seed77_unseen",
+    "kind": "eval",
+    "condition": "c5",
+    "config": "configs/conditions/c5.yaml",
+    "seed": 77,
+    "tag": "unseen",
+    "context_mode": null,
+    "dataset": "data/external/unseen_generator.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "c5_seed77"
+    ]
+  },
+  {
+    "run_id": "eval_strict_seed77_targetval",
+    "kind": "eval",
+    "condition": "strict",
+    "config": "configs/conditions/strict.yaml",
+    "seed": 77,
+    "tag": "targetval",
+    "context_mode": null,
+    "dataset": "data/raw/val.jsonl",
+    "est_minutes": 6,
+    "priority": 3.5,
+    "requires": [
+      "strict_seed77"
+    ]
+  }
+]

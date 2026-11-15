@@ -1,0 +1,120 @@
+{
+  "seed": 2026,
+  "source_id_prefix": "c1r",
+  "inputs_sha256": {
+    "c1": "90b7c8df9e37d749f582149319b3c024e912e472479bd9a5b450d587d3cc2cea",
+    "c5": "33b2def0ce3031e86267421064af3c310982b21db5379b1923f8bc36d8f6cd80",
+    "val": "2cf2d5f9c002f3ea734a7980b0d3086cd9567cbdc4f4315f5f2a87f2e980c41c",
+    "test": "6cfcfc7cdd3566e0ed77b28216ced63be1d296624d2ab1931f99a2b9deb6f802"
+  },
+  "source_rows": 10000,
+  "target_rows": 4000,
+  "target_label_counts": {
+    "0": 1999,
+    "1": 2001
+  },
+  "train_rows_overlapping_validation": {
+    "swap": [
+      "c2r3967"
+    ],
+    "tgt4k": [
+      "c2r3967"
+    ]
+  },
+  "conditions": {
+    "s2k": {
+      "train": {
+        "condition": "s2k",
+        "part": "train",
+        "n": 2000,
+        "label_counts": {
+          "0": 1000,
+          "1": 1000
+        },
+        "n_source": 2000,
+        "n_target": 0,
+        "ids_sha256": "8d8e92586b6183818e6ab690fd65b228048747f7003babc49985da591afe5ad3",
+        "file": "/home/claude/proj/ClinHallu-main/data/raw/s2k/train.jsonl",
+        "file_sha256": "f72903ed108920b8c7e92bbfbba9d5f1c2801d7bd2ff96e0a2631e0009060b29"
+      }
+    },
+    "s5k": {
+      "train": {
+        "condition": "s5k",
+        "part": "train",
+        "n": 5000,
+        "label_counts": {
+          "0": 2500,
+          "1": 2500
+        },
+        "n_source": 5000,
+        "n_target": 0,
+        "ids_sha256": "0841a39d54d04f1f1beceee33dc6ad8c65560ff91599ae608d34471824922a5f",
+        "file": "/home/claude/proj/ClinHallu-main/data/raw/s5k/train.jsonl",
+        "file_sha256": "d0176a5541013faa0b8aae9567b99e60d1bfa87db79026510f8eeb724faa6f6a"
+      }
+    },
+    "swap": {
+      "train": {
+        "condition": "swap",
+        "part": "train",
+        "n": 10000,
+        "label_counts": {
+          "0": 4999,
+          "1": 5001
+        },
+        "n_source": 6000,
+        "n_target": 4000,
+        "ids_sha256": "37e817191a3a15fe183726f0f4523218a9e5c390221f520428c9f66b4d624477",
+        "file": "/home/claude/proj/ClinHallu-main/data/raw/swap/train.jsonl",
+        "file_sha256": "aabef68ad8dbe2127a50158a73b84a7730181ad92ce8c114b952547b968b7bde"
+      }
+    },
+    "tgt4k": {
+      "train": {
+        "condition": "tgt4k",
+        "part": "train",
+        "n": 4000,
+        "label_counts": {
+          "0": 1999,
+          "1": 2001
+        },
+        "n_source": 0,
+        "n_target": 4000,
+        "ids_sha256": "66cda408852cd156c71d7911b8d9bb413d8b632a5fe7c2828068541ec33eb207",
+        "file": "/home/claude/proj/ClinHallu-main/data/raw/tgt4k/train.jsonl",
+        "file_sha256": "8dfbe65030c7759b176f5624a57f75ee084968c989707edf0a41497ece21d350"
+      }
+    },
+    "strict": {
+      "train": {
+        "condition": "strict",
+        "part": "train",
+        "n": 8000,
+        "label_counts": {
+          "0": 4000,
+          "1": 4000
+        },
+        "n_source": 8000,
+        "n_target": 0,
+        "ids_sha256": "6562c22eacfb9dcbcb93b0ed54d410c375f5a55cc86f6677f2a33a3e175383e0",
+        "file": "/home/claude/proj/ClinHallu-main/data/raw/strict/train.jsonl",
+        "file_sha256": "07efd7f604efe0e1f7459d50585b17277ce20453c0e647ecb8c3f885e6f61c1a"
+      },
+      "val": {
+        "condition": "strict",
+        "part": "val",
+        "n": 2000,
+        "label_counts": {
+          "0": 1000,
+          "1": 1000
+        },
+        "n_source": 2000,
+        "n_target": 0,
+        "ids_sha256": "974a8f665a06fa61725de9034fcff108b655941b9cf8eb374b85044dc54f93fd",
+        "file": "/home/claude/proj/ClinHallu-main/data/raw/strict/val.jsonl",
+        "file_sha256": "fc110d5c3a7e53a4e94dd6edd03100117c16a5110a6c2de90c489866b5915dbc"
+      }
+    }
+  }
+}

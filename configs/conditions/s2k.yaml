@@ -1,0 +1,9 @@
+# 2,000 source rows (nested prefix of the stratified source ordering)
+extends: ../base.yaml
+experiment:
+  name: s2k
+data:
+  train_path: data/raw/s2k/train.jsonl
+  processed_dir: data/processed/s2k
+  expected_rows:
+    train: 2000

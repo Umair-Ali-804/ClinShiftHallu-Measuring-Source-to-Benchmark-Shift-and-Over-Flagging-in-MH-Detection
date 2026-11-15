@@ -1,0 +1,9 @@
+# 5,000 source rows (superset of S2K)
+extends: ../base.yaml
+experiment:
+  name: s5k
+data:
+  train_path: data/raw/s5k/train.jsonl
+  processed_dir: data/processed/s5k
+  expected_rows:
+    train: 5000

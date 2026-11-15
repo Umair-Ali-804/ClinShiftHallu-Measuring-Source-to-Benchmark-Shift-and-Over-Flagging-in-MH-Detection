@@ -1,0 +1,9 @@
+# 4,000 target rows only
+extends: ../base.yaml
+experiment:
+  name: tgt4k
+data:
+  train_path: data/raw/tgt4k/train.jsonl
+  processed_dir: data/processed/tgt4k
+  expected_rows:
+    train: 4000

@@ -1,0 +1,12 @@
+s2k_seed13
+strict_seed13
+tgt4k_seed13
+eval_strict_seed13_targetval
+s2k_seed42
+strict_seed42
+tgt4k_seed42
+eval_strict_seed42_targetval
+s2k_seed77
+strict_seed77
+tgt4k_seed77
+eval_strict_seed77_targetval

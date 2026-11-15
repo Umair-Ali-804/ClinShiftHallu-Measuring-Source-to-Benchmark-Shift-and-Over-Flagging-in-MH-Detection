@@ -1,0 +1,13 @@
+# Strict source-only baseline: 8,000 source rows to train; a 2,000-row SOURCE holdout
+# replaces the target validation split for checkpoint selection, temperature and
+# threshold.  No target-distribution label is used anywhere before the frozen test.
+extends: ../base.yaml
+experiment:
+  name: strict
+data:
+  train_path: data/raw/strict/train.jsonl
+  val_path: data/raw/strict/val.jsonl
+  processed_dir: data/processed/strict
+  expected_rows:
+    train: 8000
+    validation: 2000

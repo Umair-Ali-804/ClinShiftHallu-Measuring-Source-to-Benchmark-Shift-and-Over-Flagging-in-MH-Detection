@@ -1,0 +1,10 @@
+# Answer-only detector: C5 training data, context blanked at training AND evaluation
+# time (the architecture is unchanged; the context segment is simply empty).
+extends: ../base.yaml
+experiment:
+  name: ansonly
+data:
+  processed_dir: data/processed/ansonly
+  context_mode: blank
+  expected_rows:
+    train: 14000
