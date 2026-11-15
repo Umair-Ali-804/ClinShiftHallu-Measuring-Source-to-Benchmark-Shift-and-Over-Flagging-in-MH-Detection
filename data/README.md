@@ -120,7 +120,7 @@ All splits are class-balanced. If your audited counts differ, edit `data.expecte
 clinhallu validate --config configs/conditions/c5.yaml
 ```
 
-> **Overlap note.** The released C2–C5 training files contain one row (`c2r3967`) identical to a validation row. With the default `overlap_policy: remove_lower_priority` the train copy is dropped (recorded in `removed_cross_split_overlap.jsonl`) and raw files are unchanged. This is why those conditions have one fewer training row in the follow-up rerun.
+> **Overlap note.** The released C2–C5 training files contain one row (`c2r3967`) identical to a validation row. In the follow-up rerun it was replaced with another unique target example, so the planned training sizes are unchanged; no validation or test example was removed.
 
 ## Training and evaluation
 
@@ -274,16 +274,18 @@ Frozen 1,000-example `pqa_labeled`-derived test set; mean ± SD over seeds 13, 4
 
 ### Follow-up rerun (33 runs)
 
-| System | Train rows | F1 | MCC | AUROC |
-|---|---|---|---|---|
+| **System** | **Train rows** | **F1** | **MCC** | **AUROC** |
+| ------------------- | -------------- | ------------ | ------------ | ------------ |
 | S2K | 2,000 | 68.05 ± 1.03 | 19.77 ± 3.14 | 67.56 ± 0.52 |
 | S5K | 5,000 | 72.44 ± 2.90 | 36.69 ± 9.43 | 76.05 ± 3.87 |
 | STRICT | 8,000 | 70.41 ± 7.25 | 45.63 ± 8.51 | 80.94 ± 3.78 |
 | C1 | 10,000 | 76.33 ± 1.35 | 50.15 ± 3.53 | 83.02 ± 1.38 |
-| TGT4K (target only) | 3,999 | 93.43 ± 0.43 | 87.03 ± 0.69 | 98.21 ± 0.08 |
-| SWAP | 9,999 | 93.54 ± 0.44 | 87.21 ± 0.92 | 98.43 ± 0.28 |
-| C5 | 13,999 | 93.92 ± 0.58 | 88.23 ± 1.08 | 98.41 ± 0.25 |
-| ANSONLY | 13,999 | 91.03 ± 0.46 | 82.21 ± 1.01 | 96.24 ± 0.41 |
+| TGT4K (target only) | 4,000 | 93.43 ± 0.43 | 87.03 ± 0.69 | 98.21 ± 0.08 |
+| SWAP | 10,000 | 93.54 ± 0.44 | 87.21 ± 0.92 | 98.43 ± 0.28 |
+| C5 | 14,000 | 93.92 ± 0.58 | 88.23 ± 1.08 | 98.41 ± 0.25 |
+| ANSONLY | 14,000 | 91.03 ± 0.46 | 82.21 ± 1.01 | 96.24 ± 0.41 |
+
+The one target training row identical to a validation row was replaced with another unique target example, so the planned training sizes are unchanged (11,000–14,000 for C2–C5, 10,000 for SWAP, 4,000 for TGT4K).
 
 - SWAP and TGT4K are statistically indistinguishable from C5, while TGT4K beats C1 by +17.1 F1 [95% CI +14.4, +19.6] with 6,000 fewer rows.
 - STRICT (no target label at any stage) reaches 70.41 F1 with high seed variance; it also uses fewer training rows and a source-only validation set.
