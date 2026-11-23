@@ -1,15 +1,3 @@
-"""Build the unseen-generator evaluation set with an LLM that did not write MedHallu.
-
-    export OPENROUTER_API_KEY=...        # Colab: put it in Secrets, never in the notebook
-    python scripts/build_unseen_generator_set.py \
-        --abstracts data/external/heldout_abstracts.jsonl \
-        --model <vendor/model-id> --n 500
-
-``--abstracts`` is JSONL with ``question`` and ``context`` (a PubMed abstract) that you
-collected yourself; pairs overlapping MedHallu train/val/test are skipped.  Choose a
-model different from the one that generated MedHallu.  Labels are by construction;
-hand-check the audit CSV (default 50 rows) and report the error rate.
-"""
 
 import argparse
 import json
