@@ -63,12 +63,12 @@ Run commands from the directory that contains `pyproject.toml`, `src/`, `configs
 
 ### Google Colab
 
-Select **Runtime → Change runtime type → GPU**. A free T4 is enough (the paper's runs used a Tesla T4). Keep the project on Google Drive so checkpoints and caches survive a Colab reset. The notebook [ClinHallu_Run_One_By_One.ipynb](ClinHallu_Run_One_By_One.ipynb) contains every cell below.
+Select **Runtime → Change runtime type → GPU**. A free T4 is enough (the paper's runs used a Tesla T4). Keep the project on Google Drive so checkpoints and caches survive a Colab reset.
 
 ```python
 from google.colab import drive
 drive.mount('/content/drive')
-ROOT = '/content/drive/MyDrive/ClinHallu'   # folder containing pyproject.toml, src/, configs/, data/
+ROOT = '/content/drive/MyDrive/ClinShiftHallu'   # folder containing pyproject.toml, src/, configs/, data/
 import os
 assert os.path.exists(f'{ROOT}/pyproject.toml'), f'No project at {ROOT}'
 ```
@@ -84,7 +84,7 @@ Session settings (run in **every** new session):
 ```python
 import os, datetime
 os.environ['GIT_COMMIT'] = 'colab-' + datetime.date.today().isoformat()   # or your real commit hash
-os.environ['CLINHALLU_ROOT'] = ROOT
+os.environ['CLINSHIFTHALLU_ROOT'] = ROOT
 os.environ['PYTHONPATH'] = f'{ROOT}/src'
 os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 ```
@@ -386,7 +386,7 @@ clinshifthallu run --config configs/conditions/swap.yaml --seed 13
 Every new Colab session: run the mount, install and session-settings cells (Section 2), then run the next unfinished run cell. A finished run writes a `DONE` marker and re-running its cell just skips it. If a session ends mid-run, run the **same cell** again: it resumes from the last checkpoint copied to Drive (every 10 minutes). A free T4 session usually fits 2–4 runs. Suggested order: all 11 conditions for seed 13, then seed 42, then seed 77.
 
 ```bash
-python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinHallu --account SOLO --run c1_seed13 --max-hours 1.9
+python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinShiftHallu --account SOLO --run c1_seed13 --max-hours 1.9
 ```
 
 Run ids are `<condition>_seed<N>` with conditions `c1 c2 c3 c4 c5 swap tgt4k strict s2k s5k ansonly` and seeds `13 42 77`:
@@ -394,7 +394,7 @@ Run ids are `<condition>_seed<N>` with conditions `c1 c2 c3 c4 c5 swap tgt4k str
 ```bash
 for seed in 13 42 77; do
   for run in c1 c2 c3 c4 c5 swap tgt4k strict s2k s5k ansonly; do
-    python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinHallu \
+    python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinShiftHallu \
         --account SOLO --run ${run}_seed${seed} --max-hours 1.9
   done
 done
@@ -402,8 +402,7 @@ done
 
 Rough single-run times on a T4 from the notebook (placeholders; replace with your own): C1 26 min, C2 29, C3 31, C4 34, C5 36, SWAP 26, TGT4K 10, STRICT 21, S2K 8, S5K 13, ANSONLY 36.
 
-With up to five free Colab accounts, use `--account A1` … `A5` and the matching `jobs_A1.txt` … `jobs_A5.txt`; open [ClinHallu_Colab_Worker.ipynb](ClinHallu_Colab_Worker.ipynb) on each account.
-
+With up to five free Colab accounts, use `--account A1` … `A5` and the matching `jobs_A1.txt` … `jobs_A5.txt`; 
 ### 6.4 Status: which of the 33 are finished?
 
 ```python
@@ -426,11 +425,11 @@ These probes test the **frozen checkpoints** with blank or shuffled context, and
 
 ```bash
 for seed in 13 42 77; do
-  python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinHallu --account SOLO \
+  python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinShiftHallu --account SOLO \
       --run eval_c1_seed${seed}_blank eval_c1_seed${seed}_shuffled --max-hours 1.9
-  python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinHallu --account SOLO \
+  python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinShiftHallu --account SOLO \
       --run eval_c5_seed${seed}_blank eval_c5_seed${seed}_shuffled --max-hours 1.9
-  python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinHallu --account SOLO \
+  python scripts/colab_worker.py --drive-root /content/drive/MyDrive/ClinShiftHallu --account SOLO \
       --run eval_strict_seed${seed}_targetval --max-hours 1.9
 done
 ```
