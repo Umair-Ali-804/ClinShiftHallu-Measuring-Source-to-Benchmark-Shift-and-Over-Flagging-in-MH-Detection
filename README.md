@@ -6,7 +6,7 @@
 [![OpenRouter](https://img.shields.io/badge/OpenRouter-LLM%20judges-6467f2?logo=openai&logoColor=white)](https://openrouter.ai/)
 
 Code for the paper **"ClinShiftHallu: Measuring Source-to-Benchmark Shift and Over-Flagging in Medical Hallucination Detection"** (Umair Ali, Mamoona Tasadduq, Javed Ali Khan).
-Repository: <https://github.com/Umair-Ali-804/ClinShiftHallu>
+Repository: <https://github.com/Umair-Ali-804/ClinShiftHallu-Measuring-Source-to-Benchmark-Shift-and-Over-Flagging-in-MH-Detection.git>
 
 **Datasets**
 
